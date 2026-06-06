@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Internal JavaScript -->
+     <h1>JavaScript</h1>
+     <script>
+    
+        // let a=10;
+        // alert(a);
+        // console.log(a);
+        // different output Methods
+        // alert("I am Yash");
+        // confirm("I am Yash");
+        // console.log("yash")
+        // document.writeln("Yash");
+        // primitive data type
+        // let a="Yash"
+        // console.log(a);
+        // console.log(typeof(a));
+         
+        // let b=23;
+        // console.log(b);
+        // console.log(typeof(b))
+
+        // let c=true;
+        // console.log(c);
+        // console.log(typeof(c))
+        
+        // let d=false;
+        // console.log(d)
+        // console.log(typeof(d));
+        
+        // let e;
+        // console.log(e);
+        // console.log(typeof(e));
+
+        // let name=prompt("Enter your name: ");
+        // console.write(name);
+        
+        // let k=a.repeat(10);
+        // document.write(k);
+        // let l=a.toLocaleLowerCase();
+        //  document.write(l);
+        // let m=a.toLocaleUpperCase()
+        // console.log(m);
+        // let n=a.concat(", cloud");
+        // console.log(n);
+        // let o=a.replace("Fortune","Cravita");
+        // console.log(o);
+        
+        // number method
+        // let p=345.678993
+        // console.log(p);
+        // console.log(typeof(p));
+        // let q=p.toString()
+        // console.log(q);
+        // console.log(typeof(q));
+        // let r=q.toFixed(2)
+        // console.log(r);
+        // console.log(typeof(r));
+        // // function 
+        // // block of code
+        // function hello(){
+        //     console.log("I am function");
+        // }
+        // hello()
+
+        // type of function...
+        // Named function
+        // function calculate(){
+        //     console.log("Arithmatic operation")
+            
+        //     function add(a,b){
+        //         console.log(a+b);
+        //     }
+        //     add(5,6)
+        //         function sub(a,b){
+        //             console.log(a-b);
+        //         }
+        //         sub(4,5)
+        //             function div(a,b){
+        //                  console.log(a/b);
+        //             }
+        //             div(6,7)
+        //                  function mul(a,b){
+        //                     console.log(a*b);
+        //                  }
+        //                  mul(5,6)
+        //                     function mod(a,b){
+        //                          console.log(a%b);
+        //                     }
+        //                     mod(34,20)
+        //                  }               
+        // calculate()()()()()()
+        // Ananomous Function
+        // function (a,b){
+        //     console.log(a+b);
+        // }
+        // add(6,5)
+        // IIF(Immediate Invoke function)
+        // (function(a,b){
+        //     console.log(a/b);
+        // }
+        // (6,8))
+
+        // // Function with Expression
+        // let mul=function(p,q){
+        //     console.log(p*q);
+        // }
+        // mul(5,6)
+
+        // // Arrow Function
+        // let div=((x,y)=>{
+        //     console.log(x/y);
+        // })
+        // div(100,4)
+
+        // // Nested function
+        // function grandparent(){
+        //     console.log("I am GP")
+        //     function parent(){
+        //         console.log("I am parent");
+        //         function child(){
+        //             console.log("I am Child");
+        //         }
+        //         return child
+        //     }
+        //     return parent
+        // }
+        // grandparent()()()
+        // object type 1. litrals 2.objects
+        // let emp={
+        //     id:101,
+        //     name:"JS",
+        //     course:"dev"
+        // }
+        // console.log(emp);
+        // console.table(emp)
+        // // constructor fun
+        // let emp1={
+        //     id:101,
+        //     name:"js",
+        //     address:{
+        //         city:"pune",
+        //         area:"sn",
+        //         street:"Jm road"
+        //     }
+        // }
+        // console.log(emp1);
+        // console.table(emp1);
+        // console.log(object.values(emp1));
+        // console.log(object.keys(emp1));
+        let body=document.body
+        let div=document.createElement("div")
+
+        // div.style.backgroundColor="pink"
+         div.style.color="purple"
+        div.style.textAlign='center'
+
+        div.innerHTML +='<h1>This is JavaScript</h1>'
+        body.appendChild(div)
+
+        div.innerHTML +='<table rules="all" border="2px" bgcolor="red"><tr><th>Id</th><th>Name</th><tr><td>01</td><td>Yash</td></tr></tr></table>'
+        body.appendChild(div)
+    </script>
+    
+</body>
+</html>

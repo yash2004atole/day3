@@ -1,0 +1,12 @@
+#clm {
+    height: 500px;
+    width: 500px;
+    background-image: url("simpleImage.jpg"), url("Ganapati.jpg" );
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: red;
+}

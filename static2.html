@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blast TV Navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 15px 40px;
+
+            background-color: black;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .div-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .div-left img {
+            width: 120px;
+            height: 40px;
+        }
+
+        .div-left a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .div-right a:hover {
+            color: orange;
+        }
+
+
+        .div-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+         .div-right i{
+    color: white;
+    font-size: 22px;
+}
+        .search-icon{
+            color: white;
+            font-size:22px;
+            cursor:pointer;
+        }
+        .search-icon:hover{
+            color: orange;
+        }
+        select {
+            width: 100px;
+            height: 30px;
+            border-radius: 4px;
+            border: none;
+            padding: 5px;
+        }
+
+        button {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: rgb(rgb(31, 45, 42));
+        }
+        .div-center{
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="div-left">
+
+            <img src="https://content-images.onvesper.com/prod/AUTOx600-webp/dce.tapgo/settings/General_-_Logo.x78Fj.png?ts=1736174464"
+                alt="logo">
+
+            <a href="#">Home</a>
+            <a href="#">Stores</a>
+            <a href="#">Guide</a>
+            <select>
+                <option>More</option>
+                <option>Watching</option>
+                <option>History</option>
+                <option>Favorites</option>
+            </select>
+        </div>
+        <div class="div-right">
+            <a href=""><i class="fa-sharp fa-light fa-magnifying-glass"></i></a>
+            <a href="../SIGNIN.html"><button>SIGN IN</button></a>
+            <button>SIGN UP</button>
+        </div>
+    </nav>
+    <div class="div-center">
+        <h1 style="font-size: 50px; font-style: italic;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Welcome</b></h1>
+        <div>
+        <p>Great welcome on this site. An available any type of movie...</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+   /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+body{
+    background-color: #e3e6e6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.nav1{
+    height: 60px;
+    background-color: #131921;
+    position: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 18px;
+}
+.div1 img{
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.p1{
+    font-size: 12px;
+    color: #cccccc;
+}
+
+
+.div2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.p2{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.div3{
+    display: flex;
+   font-size:12px ;
+    align-items: center;
+}
+
+.sel{
+    width: 55px;
+    height: 40px;
+    border: none;
+    background-color: #f3f3f3;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border: 2px solid orange;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* input:focus{
+    border: 2px solid orange;
+} */
+
+
+.div4{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.div4 select{
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.div5 h6,.div6 h5{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.p3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.div7 i{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ i{
+    font-size: 28px;
+}
+
+
+
+.div1,.div2,.div4,.div5,.div6,.div7{
+    border: 1px solid transparent;
+    padding: 5px;
+}
+    </style>
+</head>
+<body>
+  <nav > 
+    <div class="div1">
+     <img src="https://i.pinimg.com/736x/d4/9f/a3/d49fa3523c84bef766b4b2bde8296d23.jpg" alt="">
+    </div>
+    <!-- <p class="p1">delivering to pune 411002</p> -->
+    <div class="div2">
+        <p class="p1">delivering to pune 411002</p>
+        <i class="fa-thin fa-location-dot"></i>
+        <p class="p2">Update location</p>
+    </div>
+   
+    <div class="div3">
+      <select class="sel">
+        <option>All</option>
+      </select>
+      <input type="text" placeholder="Search Amazon.in">
+    </div>
+    <!-- <input type="text" placeholder="Search Amazon.in"> -->
+
+    <div class="div4">
+      <i class="fa-solid fa-flag"></i>
+      <select>
+        <option>EN</option>
+      </select>
+    </div>
+
+     <div class="div5">
+      <p class="p3">Hello, sign in</p>
+      <p class="p3">Account & Lists</p>
+    </div>
+
+    <div class="div6">
+      <p class="p3">Returns</p>
+      <p class="p3">& Orders</p>
+    </div>
+
+     <div class="div7">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Cart
+    </div>
+  </nav>
+</body>
+</html>

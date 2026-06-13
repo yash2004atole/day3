@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #dv1,#dv2,#dv3{
+            /* color: green; */
+            display: flex;
+            /* flex-direction: column; */
+            padding: 60px 60px 100px 105px;
+            margin: 60px 60px 100px 105px;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-family: italic;
+        }
+        th{
+            color:black;
+            font-family: bold;
+        }
+    </style>
 </head>
 <body>
     <table rule="all" border="2px" bgcolor="white" cellpadding="10px" cellspacing="5px">
+        <!-- <h1>School Time Table Chart</h1> -->
         <tr>
             <th>Id</th>
             <th>Name</th>
@@ -61,7 +79,7 @@
             <td>12<sup>th</sup></td>
         </tr>
     </table>
-    <table  rules="all" border="1px" cellpadding="50px" >
+    <table  rules="all" border="1px" cellpadding="20px" >
         <tr>
             <th bgcolor="white"></th>
             <th bgcolor="black"></th>
@@ -181,5 +199,215 @@
             <td><a href="https://www.cognizant.com/in/en"><img src="data:image/png;base64,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" alt=""></a></td>
         </tr>
     </table> 
+    <!-- Home Task -->
+     <div id="dv1">
+    <table rules="all" border="2px" bgcolor="chocolate" cellpadding="20px" >
+       <tr><th colspan="6" style="background-color:aquamarine;text-align:center; font-size:20px;color:orangered !important; ">School Time Table Chart</th></tr>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>8am</td>
+            <td>History</td>
+            <td>Literature</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Biology</td>
+        </tr>
+        <tr>
+            <td>9am</td>
+            <td>Literature</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Biology</td>
+            <td>History</td>
+        </tr>
+        <tr>
+            <td>10am</td>
+            <td>PE</td>
+            <td>English</td>
+            <td>PE</td>
+            <td>History</td>
+            <td>Math</td>
+        </tr>
+        <tr>
+            <td>11am</td>
+            <td>Research</td>
+            <td>Spanish</td>
+            <td>English</td>
+            <td>Math</td>
+            <td>Chemistry</td>
+        </tr>
+        <tr>
+            <td>12am</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+        </tr>
+        <tr>
+            <td>1pm</td>
+            <td>Biology</td>
+            <td>History</td>
+            <td>Spanish</td>
+            <td>Chemistry</td>
+            <td>Literature</td>
+        </tr>
+        <tr>
+            <td>2pm</td>
+            <td>Chemistry</td>
+            <td>Biology</td>
+            <td>Literature</td>
+            <td>Spanish</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3pm</td>
+            <td>Dismissal</td>
+            <td>Dismissal</td>
+            <td>Dismissal</td>
+            <td>Dismissal</td>
+            <td>Dismissal</td>
+        </tr>
+        <tr>
+            <td>4pm</td>
+            <td>Club Work</td>
+            <td>Club Work</td>
+            <td>Club Work</td>
+            <td>Club Work</td>
+            <td>Club Work</td>
+        </tr>
+    </table>
+    </div>
+    <!-- Home Task second -->
+    <div id="dv2">
+        <table rules="all" border="2px" bgcolor="lightgreen" cellpadding="10px">
+            <tr><th colspan="4" style="text-align: center;font-family: italic bold;background-color: coral;">Daily Diet Plan</th></tr>
+            <tr>
+                <th>Date</th>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+                <th>Dinner</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Poha</td>
+                <td>-</td>
+                <td rowspan="2">Sabji_Roti</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Etli_Samber</td>
+                <td>-</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Puri_mixvage</td>
+                <td>-</td>
+                <td>Egg</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Upma</td>
+                <td>-</td>
+                <td rowspan="3">Sabji_Roti</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Sabudana</td>
+                <td>-</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td rowspan="2">Khichadi</td>
+                <td>Veran_Bhat</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <!-- <td></td> -->
+                <td>Mix_Pulav</td>
+                <td>Chicken</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Home task Third -->
+     <div id="dv3">
+        <table rules="all" border="2px" bgcolor="orangered" cellpadding="20px">
+            <tr><th colspan="2" style="text-align: center;color: darkblack !important;background-color: brown;">Daily Schedule Chart</th></tr>
+            <tr>
+                <th>Time</th>
+                <th>What the Day Might Look Like</th>
+            </tr>
+            <tr>
+                <td>7:00 - 8:00 a.m.</td>
+                <td>Wake up,bathroom, bathing or wash‑up, getting dressed</td>
+            </tr>
+            <tr>
+                <td>8:00 - 9:00 a.m</td>
+                <td>Breakfast at PG</td>
+            </tr>
+            <tr>
+                <td>9:00 - 10:00 a.m</td>
+                <td>short walk, I am going to class</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00 a.m.</td>
+                <td rowspan="2">I am usually in class</td>
+            </tr>
+            <tr>
+                <td>12:00 - 2:00 p.m</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>2:00 - 2:30 p.m</td>
+                <td>Lunch</td>
+            </tr>
+            <tr>
+                <td>2:30 - 3:30 p.m</td>
+                <td>Attend soft skill lecture</td>
+            </tr>
+            <tr>
+                <td>3:30 - 5:30 p.m</td>
+                <td>Study at shirodkar house</td>
+            </tr>
+            <tr>
+                <td>5:30 - 6:00 p.m</td>
+                <td>Return my Room</td>
+            </tr>
+            <tr>
+                <td>6:00 - 6:30 p.m</td>
+                <td>enter the room and I went to frash</td>
+            </tr>
+            <tr>
+                <td>6:30 - 7:00 p.m</td>
+                <td>I am first read and recall the points. it's completed at class </td>
+            </tr>
+            <tr>
+                <td>7:00 - 7:30 p.m</td>
+                <td>Dinner</td>
+            </tr>
+            <tr>
+                <td>7:30 - 10:30 p.m</td>
+                <td>Study</td>
+            </tr>
+            <tr>
+                <td>10:30 - 11:00</td>
+                <td>See mobile</td>
+            </tr>
+            <tr>
+                <td>11:00 - 7:00</td>
+                <td>Sleeping time...</td>
+            </tr>
+        </table>
+     </div>
 </body>
 </html>

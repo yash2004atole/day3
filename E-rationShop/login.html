@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | E-Ration Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg rs-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-mark">🌾</span> E-Ration Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn-nav-outline active" href="login.html">Login</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn-nav-solid" href="register.html">Register</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button class="dark-toggle" title="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 col-xl-5">
+          <div class="rs-form-card">
+            <div class="form-banner text-center">
+              <h2>Welcome Back</h2>
+              <p>Login with your Aadhaar-linked ration card credentials</p>
+            </div>
+            <div class="form-body">
+              <form id="loginForm" novalidate>
+                <div class="mb-3">
+                  <label for="aadhaar" class="form-label">Aadhaar Number</label>
+                  <input type="text" class="form-control" id="aadhaar" placeholder="e.g. 234512348765" maxlength="12"
+                    inputmode="numeric" required>
+                  <div class="invalid-feedback">Aadhaar number is required.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                  <div class="invalid-feedback">Password is required.</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                  </div>
+                  <a href="#" class="small">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-rs-primary w-100">Login</button>
+                <p class="text-center mt-4 mb-0 small text-muted">Don't have an account? <a
+                    href="register.html">Register here</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rs-footer">
+    <div class="container">
+      <div class="foot-line text-center" style="margin-top:0;border-top:none;padding-top:0;">
+        &copy; <span class="js-year"></span> E-Ration Shop — Department of Food, Civil Supplies &amp; Consumer Affairs.
+        All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script src="login.js"></script>
+</body>
+
+</html>

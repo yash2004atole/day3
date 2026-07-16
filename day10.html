@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Square</title>
+    <style>
+        .img1{
+            height: 300px;
+            width: 300px;
+            background: radial-gradient(rgb(186, 146, 146),rgb(192, 89, 106),white);
+            animation:img1 3s ease-in-out 5s infinite;
+            margin-top: 80px;
+            margin-left: 100px;
+        }
+        
+        @keyframes img1{
+            0%{
+                background: linear-gradient(white,rgb(98, 165, 98));
+                border-radius: 20%;
+                transform: rotate(30deg);
+                float:right;
+                transform:scale(1.3);
+                transform-origin: 90px;
+            }
+            20%{
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 40%;
+                transform: rotate(30deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+
+            }
+            40%{
+                position: sticky;
+                 background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 60%;
+                transform: rotate(30deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+            60%{
+                position: absolute;
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 80%;
+                transform: rotate(30deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+        }
+        @keyframes img2{
+            0%{
+                background: linear-gradient(white,rgb(98, 165, 98));
+                border-radius: 20%;
+                transform: rotate(90deg);
+                float:left;
+                transform:scale(1.3);
+            }
+            20%{
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 40%;
+                transform: rotate(90deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+
+            }
+            40%{
+                position: sticky;
+                 background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 60%;
+                transform: rotate(90deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+            60%{
+                position: absolute;
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 80%;
+                transform: rotate(90deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+            }
+        @keyframes img3{
+            0%{
+                background: linear-gradient(white,rgb(98, 165, 98));
+                border-radius: 20%;
+                transform: rotate(180deg);
+                float:left;
+                transform:scale(1.3);
+            }
+            20%{
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 40%;
+                transform: rotate(180deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+
+            }
+            40%{
+                position: sticky;
+                 background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 60%;
+                transform: rotate(180deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+            60%{
+                position: absolute;
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 80%;
+                transform: rotate(180deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+            }
+        @keyframes img4{
+            0%{
+                background: linear-gradient(white,rgb(98, 165, 98));
+                border-radius: 20%;
+                transform: rotate(365deg);
+                float:left;
+                transform:scale(1.3);
+            }
+            20%{
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 40%;
+                transform: rotate(360deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+
+            }
+            40%{
+                position: absolute;
+                 background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 60%;
+                transform: rotate(360deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+            60%{
+                position: absolute;
+                background: linear-gradient(pink,rgb(133, 133, 175),rgb(255, 0, 208));
+                border-radius: 80%;
+                transform: rotate(360deg);
+                transform: scale(0.4);
+                opacity: 0.4;
+            }
+            }
+    </style>
+</head>
+<body>
+   
+        <div class="img1">
+        <img src="https://t3.ftcdn.net/jpg/00/42/02/56/240_F_42025680_1ZPOA3N0B2nkGHqzMpIvhSRGxMiuk5uc.jpg" alt="">
+        </div>
+        <div class="img2">
+        <img src="https://t3.ftcdn.net/jpg/05/70/06/16/240_F_570061632_X5Gcs8Ouwl3QLohPc6s6w3tTbR2JB7Mm.jpg" alt="">
+        </div>
+        <div class="img3">
+        <img src="https://t4.ftcdn.net/jpg/20/08/62/73/240_F_2008627314_E86PpY53vLL9CiJ0gQNCDmn9K8O2ROXj.jpg">
+        </div>
+        <div class="img3">
+        <img src="https://t3.ftcdn.net/jpg/18/57/39/68/240_F_1857396811_hyWEKo61On9QSICF4jCuUKrJW02lJS0f.jpg" alt="">
+        </div>
+    
+</body>
+</html>

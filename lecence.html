@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ration_Card</title>
+    <link rel="stylesheet" href="lecence.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <img width="200px" height="40px" class="img-right" src="data:image/png;base64,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" alt="">
+            <ul class="navbar-nav nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Card Holder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Card No</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Card ID</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <script src="JavaScript\lecence.js"></script>
+</body>
+
+</html>

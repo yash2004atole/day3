@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Internal JavaScript -->
-     <h1>JavaScript</h1>
-     <script>
-    
+    <h1>JavaScript</h1>
+    <button onclick="myclick()" ondblclick="click1()">Click</button>
+    <input type="text" onkeydown="down()" onkeyup="up()" onclick="code()">
+<script>
+
         // let a=10;
         // alert(a);
         // console.log(a);
@@ -22,7 +26,7 @@
         // let a="Yash"
         // console.log(a);
         // console.log(typeof(a));
-         
+
         // let b=23;
         // console.log(b);
         // console.log(typeof(b))
@@ -30,18 +34,18 @@
         // let c=true;
         // console.log(c);
         // console.log(typeof(c))
-        
+
         // let d=false;
         // console.log(d)
         // console.log(typeof(d));
-        
+
         // let e;
         // console.log(e);
         // console.log(typeof(e));
 
         // let name=prompt("Enter your name: ");
         // console.write(name);
-        
+
         // let k=a.repeat(10);
         // document.write(k);
         // let l=a.toLocaleLowerCase();
@@ -52,7 +56,7 @@
         // console.log(n);
         // let o=a.replace("Fortune","Cravita");
         // console.log(o);
-        
+
         // number method
         // let p=345.678993
         // console.log(p);
@@ -63,8 +67,8 @@
         // let r=q.toFixed(2)
         // console.log(r);
         // console.log(typeof(r));
-        // // function 
-        // // block of code
+        //  function 
+        //  block of code
         // function hello(){
         //     console.log("I am function");
         // }
@@ -74,7 +78,7 @@
         // Named function
         // function calculate(){
         //     console.log("Arithmatic operation")
-            
+
         //     function add(a,b){
         //         console.log(a+b);
         //     }
@@ -108,13 +112,13 @@
         // }
         // (6,8))
 
-        // // Function with Expression
+        // Function with Expression
         // let mul=function(p,q){
         //     console.log(p*q);
         // }
         // mul(5,6)
 
-        // // Arrow Function
+        // Arrow Function
         // let div=((x,y)=>{
         //     console.log(x/y);
         // })
@@ -123,7 +127,7 @@
         // // Nested function
         // function grandparent(){
         //     console.log("I am GP")
-        //     function parent(){
+        //        function parent(){
         //         console.log("I am parent");
         //         function child(){
         //             console.log("I am Child");
@@ -140,8 +144,8 @@
         //     course:"dev"
         // }
         // console.log(emp);
-        // console.table(emp)
-        // // constructor fun
+        // console.table(emp);
+        // constructor fun
         // let emp1={
         //     id:101,
         //     name:"js",
@@ -155,19 +159,111 @@
         // console.table(emp1);
         // console.log(object.values(emp1));
         // console.log(object.keys(emp1));
-        let body=document.body
-        let div=document.createElement("div")
+        // let body=document.body
+        // let div=document.createElement("div")
 
         // div.style.backgroundColor="pink"
-         div.style.color="purple"
-        div.style.textAlign='center'
+        //  div.style.color="purple"
+        // div.style.textAlign='center'
 
-        div.innerHTML +='<h1>This is JavaScript</h1>'
-        body.appendChild(div)
+        // div.innerHTML +='<h1>This is JavaScript</h1>'
+        // body.appendChild(div)
 
-        div.innerHTML +='<table rules="all" border="2px" bgcolor="red"><tr><th>Id</th><th>Name</th><tr><td>01</td><td>Yash</td></tr></tr></table>'
-        body.appendChild(div)
+        // div.innerHTML +='<table rules="all" border="2px" bgcolor="red"><tr><th>Id</th><th>Name</th><tr><td>01</td><td>Yash</td></tr></tr></table>'
+        // body.appendChild(div)
+        // conditional statement(1. loops statement 2.decision making statement)
+        // let num=prompt("Enter a number")
+        // if(num%2==0){
+        //     console.log("This is a even num")
+        // }else{
+        //     console.log("This is a odd num")
+
+        // let a=prompt("Enter first no")
+        // let b=prompt("Enter second no")
+        // let c=prompt("Enter third no")
+        // if(a>b){
+        //     console.log("a is larger than b");
+        // }else if(a<b){
+        //      console.log("b is lowest than a ");
+        // }else if(a>c){
+        //      console.log("your eligible for degree");
+        // }else if(age==24){
+        //      console.log("your eligible for MasterDegree");
+        // }else {
+        //      console.log("your join for fortune clude");
+        // } 
+        // let time=parseInt(prompt("Enter your timing"),10)
+        // switch(time.toString()){
+        //     case "6": 
+        //     console.log("Good Morning");
+        //     break;
+        //     case "12": 
+        //     console.log("Good Afternoon");
+        //     break;
+        //     case "4": 
+        //     console.log("Good Evining");
+        //     break;
+        //     case "10":
+        //          console.log("Good Night");
+        //          break;
+        //     default: console.log("Invalide Input");  
+        // }
+        // for(let i=1;i<=10;i++){
+        //      document.writeln("<div> Hi</div> Yash Atole ");
+        // }
+        // let i;
+        // while(i<=10){
+        //     document.writeln("hi Yash, what are you doing ");
+        //     i++;
+        // }
+        // let i;
+        // do(){
+        //     console.log("Welcome");
+        //     i++;
+        // }while(i<10);
+        // object
+        // literals
+        // let emp={
+        //     id:101,
+        //     name:"Java",
+        //     address:"pune"
+        // }
+        // console.log(emp)
+        // console.table(emp)
+        // constructor Function
+        // let stu={
+        //     id:111,
+        //     name:"Scholar",
+        //     address:{
+        //         s_street:"JM Road",
+        //         s_area:"SNagar",
+        //         s_city:"pune"
+        //     }
+        // }
+        // console.log(stu)
+        // console.table(stu)
+    function myclick(){
+        document.body.style.background="linear-gradient(pink,white)"
+        document.body.style.height="100vh"
+    }
+    function click1(){
+        document.body.style.background="linear-gradient(red,green)"
+        document.body.style.height="100vh"
+    }
+    function down(){
+        document.body.style.background="linear-gradient(brown,white)"
+        document.body.style.height="100vh"
+    }
+    function up(){
+        document.body.style.background="linear-gradient(orange,green)"
+        document.body.style.height="100vh"
+    }
+    function code(){
+        document.body.style.background="linear-gradient(white,blue)"
+        document.body.style.height="100vh"
+    }
     </script>
-    
+
 </body>
+
 </html>

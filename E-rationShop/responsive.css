@@ -1,0 +1,97 @@
+/* Tablets */
+@media (max-width: 991.98px) {
+  .rs-hero {
+    padding: 3.6rem 0 4rem;
+    text-align: center;
+  }
+
+  .rs-hero p.lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rs-hero .hero-chips {
+    justify-content: center;
+  }
+
+  .ration-card-visual {
+    margin: 2rem auto 0;
+    transform: rotate(0deg);
+  }
+
+  .section {
+    padding: 3.2rem 0;
+  }
+
+  .rs-form-card .form-body {
+    padding: 1.4rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 575.98px) {
+  .rs-navbar .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .rs-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .rs-hero p.lead {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .rs-form-card .form-banner {
+    padding: 1.2rem 1.3rem;
+  }
+
+  .rs-form-card .form-body {
+    padding: 1.1rem;
+  }
+
+  .rs-steps {
+    flex-direction: column;
+  }
+
+  .qty-control input {
+    width: 36px;
+  }
+
+  .toast-rs {
+    left: 1rem;
+    right: 1rem;
+    min-width: auto;
+  }
+
+  .rs-table {
+    font-size: .85rem;
+  }
+}
+
+/* Extra small */
+@media (max-width: 400px) 
+{
+  .ration-card-visual {
+    max-width: 100%;
+    padding: 1.1rem 1.2rem;
+  }
+
+  .rs-hero {
+    padding: 2.6rem 0 3rem;
+  }
+}
+/* Print (complaint / checkout receipts) */
+@media print 
+{
+  .rs-navbar,
+  .rs-footer,
+  .no-print 
+  {
+    display: none !important;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Title in image</title>
+    <style>
+   
+div{
+   position: relative;
+    width: 100%;
+}
+
+video{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+/* img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    z-index: 2;
+} */
+
+
+marquee{
+    position: absolute;
+    top: 20px;     
+    left: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+}
+</style>
+<body>
+    <div>
+    <video src="./Kajra Re _ Full Song _ Bunty Aur Babli _ Aishwarya, Abhishek, Amitabh Bachchan _ Shankar-Ehsaan-Loy.mp4.mp4" autoplay muted loop controls></video>
+       
+    <marquee behavior="alternate">Simple Video</marquee>
+</div>
+</body>
+</html>

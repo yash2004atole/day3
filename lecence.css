@@ -1,0 +1,40 @@
+:root {
+    --bg: rgb(49, 21, 21);
+    --color: rgb(215, 209, 200);
+    --bg: rgba(22, 34, 53, 56);
+    --cls: black;
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(100deg, var(--bg), rgb(168, 137, 142));
+}
+
+/* ========Navbar design======= */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu .nav-link {
+    color: #000;
+    font-weight: 500;
+    padding: 10px 18px;
+}
+
+.nav-menu .nav-link:hover {
+    line-height: 2px;
+    color: #7d8ca3;
+    transform: scale(1.2px);
+    transform: 0.3s;
+}
